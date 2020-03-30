@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #0b0c10;
+}
+
+.navbar .navbar-brand {
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 0 30% 0 5%;
+}
+
+.navbar li {
+  margin: 0 12px 0 12px;
+  font-weight: 300;
+}
+
+.navbar a {
+  color: whitesmoke;
+}
+
+.nav-link:hover {
+  border-style: double;
+  border-color: #66FCF1;
+  border-width: 0 0 0.5px 0;
+}
+
+.resume {
+  background-color: #0b0c10;
+  border-color: #66FCF1;
+  border-width: 1px;
+}
+
+.resume:hover {
+  background-color: #45A29E;
+}
+
+.holder {
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+}
+
+.list img {
+  width: 4vw;
+  height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+/*# sourceMappingURL=styles.css.map */
