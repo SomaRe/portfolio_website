@@ -26,7 +26,7 @@
 }
 
 .navbar .nav-link:hover {
-  color: #66FCF1;
+  color: #45A29E;
   /*text-decoration: underline;
             text-decoration-color: $main-light;
             text-decoration-thickness: 2px;
@@ -45,9 +45,19 @@
   background-color: #45A29E;
 }
 
-.holder {
-  width: 100vw;
+.temp {
+  width: 100%;
   height: 90vh;
-  overflow: hidden;
+  background-color: #0b0c10;
+}
+
+.temp2 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.temp2 p {
+  font-size: calc(150% - 0.5vw);
+  padding: 0 calc(10% - 0.5vw);
 }
 /*# sourceMappingURL=styles.css.map */
