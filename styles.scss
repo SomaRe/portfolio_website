@@ -6,26 +6,38 @@ $main-dark:#45A29E;
 $temp: rgb(163, 211, 255);
 .navbar{
     background-color:$base-color;
+    .logoname{
+        width: 4vw;
+        height: auto;
+        filter: invert(1);
+    }
+    
     .navbar-brand{
+        color:whitesmoke;
         font-size: x-large;
         font-weight: bolder;
-        margin:0 30% 0 5%;
+        margin:0 25% 0 3%;
     }
     li{
-        margin:0 12px 0 12px ;
+        margin:0 18px 0 18px ;
         font-weight: 300;
         
     }
-    a{
+    .nav-link{
         color: whitesmoke;
+        &:hover{
+            color: $main-light;
+            /*text-decoration: underline;
+            text-decoration-color: $main-light;
+            text-decoration-thickness: 2px;
+            border-style: double;
+            border-color: $main-light;
+            border-width: 0 0 0.5px 0;*/
+        }
     }
+    
 }
 
-.nav-link:hover{
-    border-style: double;
-    border-color: $main-light;
-    border-width: 0 0 0.5px 0;
-}
 
 
 .resume{    
@@ -38,14 +50,10 @@ $temp: rgb(163, 211, 255);
 }
 
 .holder{
-        width: auto;
-        height: 500px;
+        width: 100vw;
+        height: 90vh;
         overflow: hidden;
 }
 
 
-.list img{
-    width: 4vw;
-    height: auto;
-    filter: invert(1);
-}
+

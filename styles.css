@@ -2,25 +2,37 @@
   background-color: #0b0c10;
 }
 
+.navbar .logoname {
+  width: 4vw;
+  height: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .navbar .navbar-brand {
+  color: whitesmoke;
   font-size: x-large;
   font-weight: bolder;
-  margin: 0 30% 0 5%;
+  margin: 0 25% 0 3%;
 }
 
 .navbar li {
-  margin: 0 12px 0 12px;
+  margin: 0 18px 0 18px;
   font-weight: 300;
 }
 
-.navbar a {
+.navbar .nav-link {
   color: whitesmoke;
 }
 
-.nav-link:hover {
-  border-style: double;
-  border-color: #66FCF1;
-  border-width: 0 0 0.5px 0;
+.navbar .nav-link:hover {
+  color: #66FCF1;
+  /*text-decoration: underline;
+            text-decoration-color: $main-light;
+            text-decoration-thickness: 2px;
+            border-style: double;
+            border-color: $main-light;
+            border-width: 0 0 0.5px 0;*/
 }
 
 .resume {
@@ -34,15 +46,8 @@
 }
 
 .holder {
-  width: auto;
-  height: 500px;
+  width: 100vw;
+  height: 90vh;
   overflow: hidden;
-}
-
-.list img {
-  width: 4vw;
-  height: auto;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 /*# sourceMappingURL=styles.css.map */
