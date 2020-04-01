@@ -4,11 +4,21 @@ $grey : #C5C6C7;
 $main-light:#66FCF1;
 $main-dark:#45A29E;
 $temp: rgb(163, 211, 255);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
+    background-color: $base-color;
+    
+}
+
 .navbar{
     background-color:$base-color;
     .logoname{
-        width: 4vw;
-        height: auto;
         filter: invert(1);
     }
     
@@ -16,23 +26,20 @@ $temp: rgb(163, 211, 255);
         color:whitesmoke;
         font-size: x-large;
         font-weight: bolder;
-        margin:0 25% 0 3%;
     }
-    li{
-        margin:0 18px 0 18px ;
+    ul{
+        margin-left: 35vw;
+        li{
+        margin: 0 5px 0 5px;
         font-weight: 300;
         
+        }
     }
     .nav-link{
         color: whitesmoke;
         &:hover{
             color: $main-dark;
-            /*text-decoration: underline;
-            text-decoration-color: $main-light;
-            text-decoration-thickness: 2px;
-            border-style: double;
-            border-color: $main-light;
-            border-width: 0 0 0.5px 0;*/
+           
         }
     }
     
@@ -47,18 +54,52 @@ $temp: rgb(163, 211, 255);
     }
 }
 
-.temp{
-    width: 100%;
-    height: 90vh;
-    background-color: $base-color;
+.aboutme{
+    color: whitesmoke;
+    .info{
+        img{
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+    }
+    .contain{
+        padding: 10vh 10vw;
+        text-align: center;
+        h1{
+            margin-top: 5vh;
+        }
+        p{
+            font-size: calc(150% - 0.5vw);
+        }
+        
+    }
+    
 }
-.temp2{
-     color: whitesmoke;
-     text-align: center;
-     p{
-         font-size: calc(150% - 0.5vw);
-         padding: 0 calc(10% - 0.5vw);
-     }
- }
+
+.row2{
+    
+    color: whitesmoke;
+    .col1{
+        text-align: center;
+        h1{
+            font-size: 60px;
+            margin: 20px 0 10px 0;
+        }
+    }
+    .exp1{
+        h2{
+            font-weight: bolder;
+        }
+        p{
+            margin: 0;
+            &:nth-child(3),&:nth-child(4){
+                font-size: 90%;
+                color: rgb(136, 136, 136);
+            }
+        }
+    }
+}
+
 
 

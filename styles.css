@@ -1,10 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0%;
+  border: 0%;
+  margin: 0%;
+  background-color: #0b0c10;
+}
+
 .navbar {
   background-color: #0b0c10;
 }
 
 .navbar .logoname {
-  width: 4vw;
-  height: auto;
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -13,11 +20,14 @@
   color: whitesmoke;
   font-size: x-large;
   font-weight: bolder;
-  margin: 0 25% 0 3%;
 }
 
-.navbar li {
-  margin: 0 18px 0 18px;
+.navbar ul {
+  margin-left: 35vw;
+}
+
+.navbar ul li {
+  margin: 0 5px 0 5px;
   font-weight: 300;
 }
 
@@ -27,12 +37,6 @@
 
 .navbar .nav-link:hover {
   color: #45A29E;
-  /*text-decoration: underline;
-            text-decoration-color: $main-light;
-            text-decoration-thickness: 2px;
-            border-style: double;
-            border-color: $main-light;
-            border-width: 0 0 0.5px 0;*/
 }
 
 .resume {
@@ -45,19 +49,52 @@
   background-color: #45A29E;
 }
 
-.temp {
-  width: 100%;
-  height: 90vh;
-  background-color: #0b0c10;
+.aboutme {
+  color: whitesmoke;
 }
 
-.temp2 {
-  color: whitesmoke;
+.aboutme .info img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.aboutme .contain {
+  padding: 10vh 10vw;
   text-align: center;
 }
 
-.temp2 p {
+.aboutme .contain h1 {
+  margin-top: 5vh;
+}
+
+.aboutme .contain p {
   font-size: calc(150% - 0.5vw);
-  padding: 0 calc(10% - 0.5vw);
+}
+
+.row2 {
+  color: whitesmoke;
+}
+
+.row2 .col1 {
+  text-align: center;
+}
+
+.row2 .col1 h1 {
+  font-size: 60px;
+  margin: 20px 0 10px 0;
+}
+
+.row2 .exp1 h2 {
+  font-weight: bolder;
+}
+
+.row2 .exp1 p {
+  margin: 0;
+}
+
+.row2 .exp1 p:nth-child(3), .row2 .exp1 p:nth-child(4) {
+  font-size: 90%;
+  color: #888888;
 }
 /*# sourceMappingURL=styles.css.map */
