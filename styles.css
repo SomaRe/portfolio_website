@@ -53,7 +53,7 @@ body {
   color: whitesmoke;
 }
 
-.aboutme .info img {
+.aboutme .image1 img {
   display: block;
   height: auto;
   width: 100%;
@@ -85,16 +85,66 @@ body {
   margin: 20px 0 10px 0;
 }
 
-.row2 .exp1 h2 {
-  font-weight: bolder;
+.row2 .exp1 .inner {
+  padding: 10px;
 }
 
-.row2 .exp1 p {
-  margin: 0;
+.row2 .exp1 .inner p {
+  margin: 3px;
 }
 
-.row2 .exp1 p:nth-child(3), .row2 .exp1 p:nth-child(4) {
+.row2 .exp1 .inner p:nth-child(4), .row2 .exp1 .inner p:nth-child(5) {
   font-size: 90%;
   color: #888888;
+}
+
+.clip1 {
+  border-radius: 20px;
+  height: 45vh;
+  width: auto;
+  position: absolute;
+  background-color: #45A29E;
+  -webkit-clip-path: circle(18px at 96% 9%);
+          clip-path: circle(18px at 96% 9%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.clip1 .info1 {
+  cursor: pointer;
+  text-align: end;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  position: absolute;
+  right: 3.2%;
+  top: 4%;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.clip1 .info1:hover {
+  color: #45A29E;
+}
+
+.clip1 p {
+  height: 30vh;
+  width: 90%;
+  text-align: center;
+}
+
+.clip1:hover {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+  background: #45A29E;
+}
+
+@media only screen and (max-width: 600px) {
+  .clip1 {
+    height: 570px;
+  }
+  .clip1 .info1 {
+    right: 2.7%;
+    top: 6.5%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
