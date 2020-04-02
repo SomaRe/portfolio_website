@@ -1,18 +1,39 @@
 console.log("Hello")
-var x = document.getElementsByClassName("clip1")[0];
-var y = document.getElementsByClassName("info1")[0];
-var infox = document.getElementsByClassName("infox")[0];
+var x = document.getElementsByClassName("clip");
+var y = document.getElementsByClassName("info1");
+var infox = document.getElementsByClassName("infox");
+var row3 = document.getElementsByClassName("row3");
+
+/*  experience1 */ 
 document.getElementsByClassName('info1')[0].onclick = function() {
-  if(y.style.visibilty='visible'){
-  x.style.clipPath="circle(100%)";
-  y.style.visibility='hidden';
-  infox.style.visibility="visible";
+  if(y[0].style.visibilty='visible'){
+  x[0].style.clipPath="circle(100%)";
+  y[0].style.visibility='hidden';
+  infox[0].style.visibility="visible";
+  row3[0].style.opacity="0";
 }
 }
 document.getElementsByClassName('infox')[0].onclick = function() {
-  if(y.style.visibilty='visible'){
-  x.style.clipPath="circle(0% at 96% 3%)";
-  y.style.visibility='visible';
-  infox.style.visibility="hidden";
+  if(y[0].style.visibilty='visible'){
+  x[0].style.clipPath="circle(0% at 96% 3%)";
+  y[0].style.visibility='visible';
+  infox[0].style.visibility="hidden";
+  row3[0].style.opacity="1";
 }
 }
+/*  experience2 */ 
+document.getElementsByClassName('info1')[1].onclick = function() {
+  if(y[1].style.visibilty='visible'){
+  x[1].style.clipPath="circle(100%)";
+  y[1].style.visibility='hidden';
+  infox[1].style.visibility="visible";
+}
+}
+document.getElementsByClassName('infox')[1].onclick = function() {
+  if(y[1].style.visibilty='visible'){
+  x[1].style.clipPath="circle(0% at 96% 3%)";
+  y[1].style.visibility='visible';
+  infox[1].style.visibility="hidden";
+}
+}
+
