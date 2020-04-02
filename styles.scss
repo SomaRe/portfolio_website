@@ -12,9 +12,9 @@ body{
     padding: 0%;
     border: 0%;
     margin: 0%;
-    background-color: $base-color;
-    
+    background-color: $base-color;   
 }
+
 
 .navbar{
     text-align: center;
@@ -130,8 +130,10 @@ body{
     clip-path: circle(0.1% at 96% 5%);
     transition: all .5s ease-in-out;
     z-index: 2;
-    h3 span{
-        font-size: 15px;
+    h3{
+        span{
+            font-size: 15px;
+        }
     }
     p{
         width: 100%;
@@ -145,13 +147,6 @@ body{
     transition: opacity 0.5s ease-in-out;
     margin-top: 6vw;
     color: whitesmoke;
-    .col1{
-        text-align: center;
-        h1{
-            font-size: 60px;
-            margin: 10px 0 10px 0;
-        }
-    }
     .exp1{
         
         position: relative;
@@ -166,4 +161,8 @@ body{
             }
         }
     }
+}
+
+.exp1 , .exp2{
+    margin-bottom: 20px;
 }

@@ -151,15 +151,6 @@ body {
   color: whitesmoke;
 }
 
-.row3 .col1 {
-  text-align: center;
-}
-
-.row3 .col1 h1 {
-  font-size: 60px;
-  margin: 10px 0 10px 0;
-}
-
 .row3 .exp1 {
   position: relative;
 }
@@ -175,5 +166,9 @@ body {
 .row3 .exp1 .inner p:nth-child(4), .row3 .exp1 .inner p:nth-child(5) {
   font-size: 90%;
   color: #888888;
+}
+
+.exp1, .exp2 {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
