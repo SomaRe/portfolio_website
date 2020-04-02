@@ -60,7 +60,7 @@ body {
 }
 
 .aboutme .contain {
-  padding: 10vh 10vw;
+  padding: 5vh 5vw;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .aboutme .contain p {
-  font-size: calc(150% - 0.5vw);
+  font-size: 20px;
 }
 
 .row2 {
@@ -82,11 +82,15 @@ body {
 
 .row2 .col1 h1 {
   font-size: 60px;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
+}
+
+.row2 .exp1 {
+  position: relative;
 }
 
 .row2 .exp1 .inner {
-  padding: 10px;
+  position: relative;
 }
 
 .row2 .exp1 .inner p {
@@ -98,53 +102,41 @@ body {
   color: #888888;
 }
 
+.info1, .infox {
+  position: absolute;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  top: 5%;
+  right: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.info1 {
+  visibility: visible;
+}
+
+.infox {
+  visibility: hidden;
+  z-index: 1;
+}
+
 .clip1 {
+  text-align: center;
+  padding: 5px;
   border-radius: 20px;
-  height: 45vh;
-  width: auto;
   position: absolute;
   background-color: #45A29E;
-  -webkit-clip-path: circle(18px at 96% 9%);
-          clip-path: circle(18px at 96% 9%);
+  -webkit-clip-path: circle(0.1% at 96% 5%);
+          clip-path: circle(0.1% at 96% 5%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-.clip1 .info1 {
-  cursor: pointer;
-  text-align: end;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  position: absolute;
-  right: 3.2%;
-  top: 4%;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-
-.clip1 .info1:hover {
-  color: #45A29E;
-}
-
 .clip1 p {
-  height: 30vh;
-  width: 90%;
-  text-align: center;
-}
-
-.clip1:hover {
-  -webkit-clip-path: circle(100%);
-          clip-path: circle(100%);
-  background: #45A29E;
-}
-
-@media only screen and (max-width: 600px) {
-  .clip1 {
-    height: 570px;
-  }
-  .clip1 .info1 {
-    right: 2.7%;
-    top: 6.5%;
-  }
+  width: 100%;
+  padding: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
