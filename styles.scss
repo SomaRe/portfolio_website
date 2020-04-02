@@ -58,6 +58,8 @@ body{
     color: whitesmoke;
     .image1{
         img{
+            position: relative;
+            top: 30px;
             display: block;
             height: auto;
             width: 100%;
