@@ -133,6 +133,10 @@ body {
   z-index: 2;
 }
 
+.clip h3 span {
+  font-size: 15px;
+}
+
 .clip p {
   width: 100%;
   padding: 5px;
