@@ -10,7 +10,6 @@ document.getElementsByClassName('info1')[0].onclick = function() {
   x[0].style.clipPath="circle(100%)";
   y[0].style.visibility='hidden';
   infox[0].style.visibility="visible";
-  row3[0].style.opacity="0";
 }
 }
 document.getElementsByClassName('infox')[0].onclick = function() {
@@ -18,7 +17,6 @@ document.getElementsByClassName('infox')[0].onclick = function() {
   x[0].style.clipPath="circle(0% at 96% 3%)";
   y[0].style.visibility='visible';
   infox[0].style.visibility="hidden";
-  row3[0].style.opacity="1";
 }
 }
 /*  experience2 */ 

@@ -7,7 +7,12 @@ $temp: rgb(163, 211, 255);
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+/**{
+    outline: solid red 1px;
+}*/
+
 body{
+    color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     padding: 0%;
     border: 0%;
@@ -17,6 +22,7 @@ body{
 
 
 .navbar{
+    margin: 15px;
     text-align: center;
     background-color:$base-color;
     .logoname{
@@ -24,8 +30,9 @@ body{
     }
     
     .navbar-brand{
+        margin-left: 10px;
         color:whitesmoke;
-        font-size: x-large;
+        font-size: 24px;
         font-weight: bolder;
     }
     ul{
@@ -38,7 +45,7 @@ body{
     .nav-link{
         color: whitesmoke;
         &:hover{
-            color: $main-dark;
+            color: $main-light;
            
         }
     }
@@ -56,37 +63,82 @@ body{
 
 .aboutme{
     color: whitesmoke;
+    
     .image1{
         img{
-            position: relative;
-            display: block;
             height: auto;
             width: 100%;
         }
     }
     .contain{
-        padding: 5vh 5vw;
+        display: flex;
+        .contain_data{ 
+            margin: auto;
+         align-items: center;
         text-align: center;
-        h1{
-            margin-top: 5vh;
-        }
         p{
-            font-size: 20px;
+            font-size: 18px;
+        }
         }
         
-    }
-    
+    }    
 }
 
-.row2{
-    color: whitesmoke;
-    .col1{
-        text-align: center;
-        h1{
-            font-size: 60px;
-            margin: 10px 0 50px 0;
+.info1, .infox{
+    position: absolute;
+    align-items: right;
+    top: 0.5%;
+    right: 5px;
+    cursor: pointer;
+    height: 35px;
+    width: auto;
+}
+
+.info1{
+    visibility: visible;
+}
+
+.infox{
+    visibility: hidden;
+    z-index: 3;
+}
+
+.clip{
+    text-align: center;
+    padding: 5px;
+    border-radius: 18px;
+    position: absolute;
+    background-color: $main-dark;
+    clip-path: circle(0% at 96% 5%);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+    height: 100%;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    h3{
+        span{
+            font-size: 15px;
         }
     }
+    p{
+        width: 100%;
+        padding: 5px;
+        
+    }
+}
+
+.col1{
+    text-align: center;
+    h1{
+        font-size: 60px;
+        margin: 10px 0 50px 0;
+    }
+}
+.row2{
+    color: whitesmoke;
+    
     .exp1{
         position: relative;
         .inner{
@@ -102,53 +154,12 @@ body{
     }
 }
 
-.info1, .infox{
-    position: absolute;
-    align-items: right;
-    top: 0.5%;
-    right: 5px;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-}
 
-.info1{
-    visibility: visible;
-}
-
-.infox{
-    visibility: hidden;
-    z-index: 3;
-}
-
-.clip   {
-    text-align: center;
-    padding: 5px;
-    border-radius: 18px;
-    position: absolute;
-    background-color: $main-dark;
-    clip-path: circle(0.1% at 96% 5%);
-    transition: all .5s ease-in-out;
-    z-index: 2;
-    h3{
-        span{
-            font-size: 15px;
-        }
-    }
-    p{
-        width: 100%;
-        padding: 5px;
-        
-    }
-}
 
 .row3{
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
     margin-top: 6vw;
     color: whitesmoke;
     .exp1{
-        
         position: relative;
         .inner{
             position: relative;
@@ -166,3 +177,55 @@ body{
 .exp1 , .exp2{
     margin-bottom: 20px;
 }
+
+.row4{
+    h3{
+        text-align: center;
+    }
+}
+
+.footer{
+        text-align: center;
+        background-color: $main-dark;
+        border-radius: 1px;
+        padding: 50px;
+        .top{
+            padding: 20px;
+        }
+        .pngs img{
+            filter: invert(100%);
+            height: 38px;
+            width: auto;
+            margin: 0 1vw;
+        }
+        .license{
+            position: relative;
+            bottom: -50px;
+            p{
+               font-size: 10px;
+           }
+        }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+    .info1, .infox{
+        height: 35px;
+        width: 35px;
+    }
+
+    .navbar{
+        margin: 0px;
+        .navbar-brand{
+            margin: 0px;
+        }
+    }
+
+    .footer{
+        padding: 50px 25px 50px 25px;
+    }
+    
+
+  }
