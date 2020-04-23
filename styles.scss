@@ -85,10 +85,11 @@ body{
 }
 
 .info1, .infox{
+    transition: all 0.4s ease-in-out;
     position: absolute;
     align-items: right;
     top: 0.5%;
-    right: 5px;
+    right: 2px;
     cursor: pointer;
     height: 35px;
     width: auto;
@@ -101,6 +102,7 @@ body{
 .infox{
     visibility: hidden;
     z-index: 3;
+    border-radius: 100%;
 }
 
 .clip{
@@ -109,8 +111,8 @@ body{
     border-radius: 18px;
     position: absolute;
     background-color: $main-dark;
-    clip-path: circle(0% at 96% 5%);
-    transition: all .5s ease-in-out;
+    clip-path: circle(0% at 98% 10%);
+    transition: all 0.5s ease-in-out;
     z-index: 2;
     height: 100%;
     overflow: scroll;
@@ -123,8 +125,9 @@ body{
         }
     }
     p{
+        text-align: center;
         width: 100%;
-        padding: 5px;
+        padding: 0 30px 10px 0;
         
     }
 }
@@ -210,6 +213,21 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+
+    .contain_data{
+        h1{
+            font-size: 36px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+
+    .col1{
+        h1{
+            font-size: 36px;
+        }
+    }
   
     .info1, .infox{
         height: 35px;

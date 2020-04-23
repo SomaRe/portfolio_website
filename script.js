@@ -14,7 +14,7 @@ document.getElementsByClassName('info1')[0].onclick = function() {
 }
 document.getElementsByClassName('infox')[0].onclick = function() {
   if(y[0].style.visibilty='visible'){
-  x[0].style.clipPath="circle(0% at 96% 3%)";
+  x[0].style.clipPath="circle(0% at 98% 10%)";
   y[0].style.visibility='visible';
   infox[0].style.visibility="hidden";
 }
@@ -29,7 +29,7 @@ document.getElementsByClassName('info1')[1].onclick = function() {
 }
 document.getElementsByClassName('infox')[1].onclick = function() {
   if(y[1].style.visibilty='visible'){
-  x[1].style.clipPath="circle(0% at 96% 3%)";
+  x[1].style.clipPath="circle(0% at 98% 10%)";
   y[1].style.visibility='visible';
   infox[1].style.visibility="hidden";
 }
