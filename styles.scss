@@ -87,13 +87,29 @@ body{
 .info1, .infox{
     transition: all 0.4s ease-in-out;
     position: absolute;
-    align-items: right;
     top: 0.5%;
     right: 2px;
     cursor: pointer;
     height: 35px;
     width: auto;
 }
+
+
+@keyframes ani{
+    from {top: 83%; opacity: 0;}
+    to {top: 90%;opacity: 1;}
+}
+
+.arrow_down{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    cursor: default;
+    right: 10px;
+    z-index: 5;
+    //animation: ani 0.5s ease-in-out 0.5s infinite;
+}
+
 
 .info1{
     visibility: visible;
@@ -182,9 +198,65 @@ body{
 }
 
 .row4{
-    h3{
+    h1{
         text-align: center;
+        margin: 10px auto 20px auto;
     }
+}
+
+.collapse_pill{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+@keyframes collapse_ani{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.row5 ,.row6{
+    text-align: center;
+    .skills_heading{
+        user-select: none;
+        cursor: pointer;
+        margin-top: 10px ;
+    }
+    .skills{
+        letter-spacing: 0.1em;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 0 10px 15px;
+        background-color: $main-dark;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .sub_skills{
+        margin-left: 10px;
+    }
+    .sub_skills_head{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    
+}
+
+.chemathon,.ssgb,.social_psychology{
+    text-align: center;
+    margin-top: 15px;
+    p{
+        padding: 5px;
+    }
+    h4{
+        margin-top: 10px;
+    }
+}
+
+.row7{
+    h1{
+        margin: 20px auto 10px;
+    }
+    
 }
 
 .footer{
