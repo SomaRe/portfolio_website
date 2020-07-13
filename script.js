@@ -44,10 +44,13 @@ document.getElementsByClassName('infox')[1].onclick = function() {
 }
 }
 
+
 var pill = document.getElementsByClassName("collapse_pill");
+pill[0].style.display="flex";
+pill[0].style.opacity='1';
 document.getElementsByClassName("skills_heading")[0].onclick = ()=>{
   if(pill[0].style.display=="none" || pill[0].style.display==""){
-  pill[0].style.display="inherit";
+  pill[0].style.display="flex";
   pill[0].style.animation = "collapse_ani 1s ease-in-out forwards"
   }
   else{
@@ -63,5 +66,67 @@ document.getElementsByClassName("skills_heading")[1].onclick = ()=>{
   else{
     pill[1].style.display="none";
   pill[1].style.animation = ""
+  }
+}
+
+
+
+document.getElementsByClassName("sub_skills_head")[0].onclick = ()=>{
+  var p = 2
+  if(pill[p].style.display=="none" || pill[p].style.display==""){
+  pill[p].style.display="flex";
+  pill[p].style.animation = "collapse_ani 1s ease-in-out forwards"
+  }
+  else{
+    pill[p].style.display="none";
+  pill[p].style.animation = ""
+  }
+}
+
+document.getElementsByClassName("sub_skills_head")[1].onclick = ()=>{
+  var p = 3
+  if(pill[p].style.display=="none" || pill[p].style.display==""){
+  pill[p].style.display="flex";
+  pill[p].style.animation = "collapse_ani 1s ease-in-out forwards"
+  }
+  else{
+    pill[p].style.display="none";
+  pill[p].style.animation = ""
+  }
+}
+
+document.getElementsByClassName("sub_skills_head")[2].onclick = ()=>{
+  var p = 4
+  if(pill[p].style.display=="none" || pill[p].style.display==""){
+  pill[p].style.display="flex";
+  pill[p].style.animation = "collapse_ani 1s ease-in-out forwards"
+  }
+  else{
+    pill[p].style.display="none";
+  pill[p].style.animation = ""
+  }
+}
+
+document.getElementsByClassName("sub_skills_head")[3].onclick = ()=>{
+  var p = 5
+  if(pill[p].style.display=="none" || pill[p].style.display==""){
+  pill[p].style.display="flex";
+  pill[p].style.animation = "collapse_ani 1s ease-in-out forwards"
+  }
+  else{
+    pill[p].style.display="none";
+  pill[p].style.animation = ""
+  }
+}
+
+document.getElementsByClassName("sub_skills_head")[4].onclick = ()=>{
+  var p = 6
+  if(pill[p].style.display=="none" || pill[p].style.display==""){
+  pill[p].style.display="flex";
+  pill[p].style.animation = "collapse_ani 1s ease-in-out forwards"
+  }
+  else{
+    pill[p].style.display="none";
+  pill[p].style.animation = ""
   }
 }

@@ -11,6 +11,9 @@ $temp: rgb(163, 211, 255);
     outline: solid red 1px;
 }*/
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
@@ -206,13 +209,16 @@ body{
 
 .collapse_pill{
     display: none;
-    opacity: 0;
+    opacity: 0; 
     transition: opacity 1s ease-in-out;
 }
+
+
 @keyframes collapse_ani{
     from{opacity: 0;}
     to{opacity: 1;}
 }
+
 
 .row5 ,.row6{
     text-align: center;
@@ -234,6 +240,7 @@ body{
         margin-left: 10px;
     }
     .sub_skills_head{
+        cursor: pointer;
         margin-top: 10px;
         margin-left: 10px;
     }

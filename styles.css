@@ -2,6 +2,10 @@
 /**{
     outline: solid red 1px;
 }*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: whitesmoke;
   font-family: 'Montserrat', sans-serif;
@@ -274,6 +278,7 @@ body {
 }
 
 .row5 .sub_skills_head, .row6 .sub_skills_head {
+  cursor: pointer;
   margin-top: 10px;
   margin-left: 10px;
 }
